@@ -1,7 +1,18 @@
+html{
+  overflow-x: hidden;
+}
 body {
   background-color: rgba(34, 34, 34, 1);
   padding-top: 2vw;
   overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+.main{
+  padding: 0;
+  margin: 0;
 }
 
 .header {
@@ -16,6 +27,7 @@ body {
   padding: 1vw 9vw;
   background-color: transparent;
   transition: background-color 0.3s ease;
+
 }
 @media (max-width: 1000px) {
   .header {
@@ -486,20 +498,20 @@ body {
 
 .photo {
   position: absolute;
-  right: -8.5vw;
+  left: 46vw;
   bottom: 0px;
   width: 42vw;
 }
 @media (max-width: 1000px) {
   .photo {
     width: 65%;
-    right: -16vw;
+    left: 47vw;
   }
 }
 @media (max-width: 600px) {
   .photo {
     width: 90%;
-    right: -30vw;
+    left: 35vw;
   }
 }
 
@@ -578,6 +590,7 @@ body {
   border: 0.1vw solid rgba(85, 86, 90, 1);
   font-size: 1.2vw;
   outline: none;
+  background-color: transparent;
 }
 .input:focus {
   border: 0.1vw solid rgba(213, 201, 190, 1);
@@ -594,7 +607,7 @@ body {
     width: 40vw;
     height: 8vw;
     font-size: 3vw;
-    background-color: transparent;
+    
   }
 }
 
